@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<title>My Portfolio</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CVcss.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body class="theme1">
+
+    <!-- Side Navbar -->
+    <nav class="w3-sidebar w3-bar-block w3-center w3-card-4 w3-animate-right w3-blue w3-hide w3-hide-small" style="width:5%; right:0; z-index:3">
+        <a class="w3-bar-item w3-button w3-hover-white" onclick="moveTo(1)">
+            <i class='fas fa-user' style='font-size:15px'></i><br>
+            A<br>
+            B<br>
+            O<br>
+            U<br>
+            T<br>
+        </a>
+
+        <a class="w3-bar-item w3-button w3-hover-white" onclick="moveTo(2)">
+            <i class="fa fa-puzzle-piece" style="font-size: 15px;"></i><br>
+            S<br>
+            K<br>
+            I<br>
+            L<br>
+            L<br>
+        </a>
+
+        <a class="w3-bar-item w3-button w3-hover-white" onclick="moveTo(3)">
+            <i class="fas fa-lightbulb" style="font-size: 15px;"></i><br>
+            W<br>
+            O<br>
+            R<br>
+            K<br>
+            S<br>
+        </a>
+
+        <a class="w3-bar-item w3-button w3-hover-white" onclick="moveTo(4)">
+            <i class="fa fa-users" style='font-size:15px'></i><br>
+            M<br>
+            O<br>
+            R<br>
+            E<br>
+        </a>
+  
+    </nav>
+
+    <!-- Image header -->
+    <div class="parallax w3-display-container">
+        <div class="w3-center w3-hide-small" id="topbar">
+            <i class='fas fa-caret-up' style='font-size:24px'></i>
+        </div>
+
+        <div class="w3-display-left" style="position:fixed; z-index:1;">
+            <div class="w3-blue w3-padding" id="linkedin">
+                <a href="https://www.linkedin.com/in/ricky-fan09/"><img src="Linkedin_icon.png" width="55" height="55" hspace="3"></a>
+            </div>
+            <div class="w3-light-grey w3-padding" id="github">
+                <a href="https://github.com/R-Fan9"><img src="Github_icon.png" width="55" height="55" hspace="3"></a>
+            </div>
+        </div>
+
+        <div id="topBtn" class="w3-hide-large w3-hide-medium w3-display-bottomright w3-margin" style="position:fixed; z-index:999">
+            <button class="w3-button w3-xlarge w3-circle w3-orange w3-card-4"><i class="fa fa-chevron-up" style="font-size:24px"></i></button>
+        </div>
+        <div class="w3-display-topmiddle w3-margin w3-center w3-animate-fading w3-text-white" id="welcomeSign">
+            <h1 class="w3-hide-small w3-hide-medium">Welcome To My <span class="w3-padding w3-orange w3-opacity-min" id="logo"><b>CV</b></span></h1>
+            <h3 class="w3-hide-large w3-hide-small">Welcome To My <span class="w3-padding w3-orange w3-opacity-min" id="logo"><b>CV</b></span></h3>
+            <h4 class="w3-hide-large w3-hide-medium">Welcome To My <span class="w3-padding w3-orange w3-opacity-min" id="logo"><b>CV</b></span></h4>
+        </div>
+
+        <div class="w3-display-middle w3-center w3-animate-opacity w3-text-white">
+            <div class="profile-image" id="me"><a href="#"><img src="me.jfif"></a></div>
+            <h1 class="w3-hide-medium w3-hide-small w3-margin">RICKY FAN</h1>
+            <h3 class="w3-hide-large w3-hide-small w3-margin">RICKY FAN</h3>
+            <h5 class="w3-hide-large w3-hide-medium w3-margin">RICKY FAN</h5>
+        </div>
+
+        <div class="w3-display-bottommiddle w3-padding w3-border w3-wide w3-text-white w3-center w3-margin">
+            <h4 class="w3-hide-medium w3-hide-small">HONOURS COMPUTER SCIENCE COOP<hr></h4>
+            <h4 class="w3-hide-medium w3-hide-small">MCMASTER UNIVERSTIY</h4>
+            <h5 class="w3-hide-large w3-hide-small">COMPUTER SCIENCE | MCMASTER</h5>
+            <h6 class="w3-hide-large w3-hide-medium">CS-COOP | MAC</h6>
+        </div>
+    </div>
+
+    <!-- About Me -->
+    <div class="w3-row-padding w3-margin w3-center" id="About">
+
+        <div class="w3-center w3-margin-top w3-hide w3-animate-left">
+            <h1 class="w3-xxxlarge">ABOUT ME</h1>
+            <hr class="w3-border-grey" style="margin:auto; width:45%">
+        </div>
+        <br>
+
+        <div class="w3-third">
+            <div class="w3-card w3-container w3-hide w3-animate-right" style="min-height:460px" id="contact">
+                <h3>QUICK BIO</h3><br>
+                <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+                <table class='w3-table w3-margin w3-bordered w3-hoverable w3-small'>
+                    <tr>
+                        <th>Age</th>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <th>Hometown</th>
+                        <td>GuangZhou China</td>
+                    </tr>
+                    <tr>
+                        <th>Location</th>
+                        <td>Toronto Ontario</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>rickyhzfan@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Phone#</th>
+                        <td>647-901-9951</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card w3-container w3-light-grey w3-hide w3-animate-right" style="min-height:460px" id="bgInfo">
+                <h3>ABOUT</h3>
+                <p> <b>I</b> am a Computer Science student at McMaster University</p>
+                <p> An enthusiast in programming, website, software and AI developments</p> 
+                <p> Coding provides me a key to unlock all the impossibles</p>
+                <p> Aspired and determined to serve people with my knowledge</p>
+                <i class="fas fa-infinity w3-margin w3-text-orange" style="font-size:120px"></i>
+
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card w3-container w3-hide w3-animate-right" style="min-height:460px" id="hobLang">
+                <div class="W3-block">
+                    <h3>HOBBIES</h3>
+                    <table class='w3-table w3-margin w3-striped'>
+                        <tr>
+                            <th>Sports</th>
+                            <th>Leisure Activities</th>
+                        </tr>
+                        <tr class="w3-text-black">
+                            <td>Hockey <i class='fas fa-hockey-puck' style='font-size:15px'></i></td>
+                            <td>Reading <i class="fas fa-book-open" style='font-size:15px'></i></td>
+                        </tr>
+                        <tr>
+                            <td>Soccer <i class='fas fa-futbol' style='font-size:15px'></i></td>
+                            <td>Watching Films <i class="fa fa-camera" style="font-size:15px"></i></td>
+                        </tr>
+                        <tr class="w3-text-black">
+                            <td>Weightlifting <i class='fas fa-dumbbell' style='font-size:15px'></i></td>
+                            <td>YouTube <i class="fab fa-youtube" style="font-size:15px"></i></td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+
+                <div class="W3-block">
+                    <h3>LANGUAGES</h3>
+                    <table class='w3-table w3-margin w3-striped'>
+                        <thread>
+                        <tr>
+                            <th>Native</th>
+                            <th>Second</th>
+                            <th>Third</th>
+                        </tr>
+                        </thread>
+                        <tr class="w3-text-black">
+                            <td>Cantonese</td>
+                            <td>Madrain</td>
+                            <td>English</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    
+
+    <div class="parallax w3-display-container">
+        <div class="w3-display-middle w3-center w3-hide-medium w3-hide-small">
+            <h1><span class="w3-padding w3-orange w3-opacity-min w3-orange" id="logo"><b>I</b></span> KEY - BACK TO TOP</h1>
+        </div>
+    </div>
+
+
+    <!-- Skills -->
+    <div class="w3-container w3-margin" id="Skills">
+
+        <div class="w3-center w3-margin-top w3-hide w3-animate-left">
+            <h1 class="w3-xxxlarge">SKILLS</h1>
+            <hr class="w3-border-grey" style="margin:auto; width:45%">
+        </div>
+        <br>
+
+        <div class="w3-row-padding w3-hide w3-center" id="skTable">
+            <div class="w3-quarter w3-container w3-border-right w3-animate-right" style="min-height:460px" id="pLangs">
+                <h4>LANGUAGES</h4>
+                <p>Python</p>
+                <div class="w3-light-grey w3-small" id="skbBar">
+                    <div class="w3-container w3-center w3-teal" id="skfBar1" style="width:0%">90%</div>
+                </div>
+                <p>C++</p>
+                <div class="w3-light-grey w3-small" id="skbBar">
+                    <div class="w3-container w3-center w3-teal" id="skfBar2" style="width:0%">70%</div>
+                </div>
+                <p>Haskell</p>
+                <div class="w3-light-grey w3-small" id="skbBar">
+                    <div class="w3-container w3-center w3-teal"  id="skfBar3" style="width:0%">70%</div>
+                </div>
+                <p>MATLAB</p>
+                <div class="w3-light-grey w3-small" id="skbBar">
+                    <div class="w3-container w3-center w3-teal" id="skfBar4" style="width:0%">65%</div>
+                </div>
+                <p>HTML</p>
+                <div class="w3-light-grey w3-small" id="skbBar">
+                    <div class="w3-container w3-center w3-teal" id="skfBar5" style="width:0%">80%</div>
+                </div>
+                <br>
+                <div class="w3-xlarge w3-center">
+                    <i class="fa fa-caret-left" style="cursor: pointer" id="ra"></i> <i class="fa fa-caret-right w3-text-teal" style="cursor: pointer" id="la"></i>
+                </div>
+            </div>
+            
+            <div class="w3-quarter w3-container w3-border-right w3-hide w3-animate-left" style="min-height:460px" id="pLangs2">
+                <h4>LANGUAGES</h4>
+                <p>JavaScript</p>
+                <div class="w3-light-grey w3-small" id="skbBar">
+                    <div class="w3-container w3-center w3-teal" style="width:65%">65%</div>
+                </div>
+                <p>Java</p>
+                <div class="w3-light-grey w3-small" id="skbBar">
+                    <div class="w3-container w3-center w3-teal" style="width:35%">35%</div>
+                </div>
+                <br>
+                <div class="w3-xlarge w3-center">
+                    <i class="fa fa-caret-left" style="cursor: pointer" id="ra"></i> <i class="fa fa-caret-right" style="cursor: pointer" id="la"></i>
+                </div>
+            </div>
+
+            <div class="w3-quarter w3-container w3-border-right w3-animate-right" style="min-height:460px" id="frameworks">
+                <h4>FRAMEWORKS</h4>
+                <p>Django</p>
+                <div class="w3-light-grey w3-small" id="skbBar">
+                    <div class="w3-container w3-center w3-teal" id="skfBar6" style="width:0%">85%</div>
+                 </div>
+                 <p>jQuery</p>
+                 <div class="w3-light-grey w3-small" id="skbBar">
+                    <div class="w3-container w3-center w3-teal" id="skfBar7" style="width:0%">80%</div>
+                 </div>
+                 <p>W3.CSS</p>
+                 <div class="w3-light-grey w3-small" id="skbBar">
+                    <div class="w3-container w3-center w3-teal" id="skfBar8" style="width:0%">85%</div>
+                 </div>
+                 <p>Pygame</p>
+                 <div class="w3-light-grey w3-small" id="skbBar">
+                    <div class="w3-container w3-center w3-teal" id="skfBar9" style="width:0%">70%</div>
+                 </div>
+                 <p>TensorFlow</p>
+                 <div class="w3-light-grey w3-small" id="skbBar">
+                    <div class="w3-container w3-center w3-teal" id="skfBar10" style="width:0%">45%</div>
+                 </div>
+                 <br>
+                 <div class="w3-xlarge w3-center">
+                     <i class="fa fa-caret-left" style="cursor: pointer" id="ra"></i> <i class="fa fa-caret-right w3-text-teal" style="cursor: pointer" id="la"></i>
+                 </div>
+            </div> 
+
+            <div class="w3-quarter w3-container w3-border-right w3-hide w3-animate-left" style="min-height:460px" id="frameworks2">
+                <h4>FRAMEWORKS</h4>
+                <p>ReactJS</p>
+                <div class="w3-light-grey w3-small" id="skbBar">
+                    <div class="w3-container w3-center w3-teal" style="width:30%">30%</div>
+                </div>
+                <br>
+                <div class="w3-xlarge w3-center">
+                    <i class="fa fa-caret-left" style="cursor: pointer" id="ra"></i> <i class="fa fa-caret-right" style="cursor: pointer" id="la"></i>
+                </div>
+            </div>
+
+            <div class="w3-quarter w3-container w3-border-right w3-animate-right" style="min-height:460px" id="dbase">
+                <h4>DATABASE</h4>
+                <p>SQLite</p>
+                <div class="w3-light-grey w3-small" id="skbBar">
+                    <div class="w3-container w3-center w3-teal" id="skfBar11" style="width:0%">65%</div>
+                 </div>
+                 <p>PostgreSOL</p>
+                 <div class="w3-light-grey w3-small" id="skbBar">
+                     <div class="w3-container w3-center w3-teal" id="skfBar12" style="width:0%">45%</div>
+                </div>
+            </div>
+            <div class="w3-quarter w3-container w3-animate-right w3-border-right" style="min-height:460px" id="tools">
+                <h4>TOOLS</h4>
+                <p>Github</p>
+                <div class="w3-light-grey w3-small" id="skbBar">
+                    <div class="w3-container w3-center w3-teal" id="skfBar13" style="width:0%">70%</div>
+                 </div>
+                 <p>DigitalOcean</p>
+                 <div class="w3-light-grey w3-small" id="skbBar">
+                     <div class="w3-container w3-center w3-teal" id="skfBar14" style="width:0%">50%</div>
+                  </div>
+                  <p>Nginx</p>
+                  <div class="w3-light-grey w3-small" id="skbBar">
+                      <div class="w3-container w3-center w3-teal" id="skfBar15" style="width:0%">65%</div>
+                  </div>
+                  <p>Gunicorn</p>
+                  <div class="w3-light-grey w3-small" id="skbBar">
+                      <div class="w3-container w3-center w3-teal" id="skfBar16" style="width:0%">45%</div>
+                  </div>
+                  <p>CSS</p>
+                  <div class="w3-light-grey w3-small" id="skbBar">
+                      <div class="w3-container w3-center w3-teal" id="skfBar17" style="width:0%">80%</div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="parallax w3-display-container">
+        <div class="w3-display-middle w3-center w3-hide-small w3-hide-medium">
+            <h1><span class="w3-padding w3-orange w3-opacity-min w3-orange" id="logo"><b><i class="fa fa-caret-left"></i> <i class="fa fa-caret-right"></i></b></span> KEYS - SLIDE IMAGES</h1>
+        </div>
+    </div>
+
+    <!-- Works -->
+    <div class="w3-container w3-margin" id="Works">
+        <div class="w3-center w3-margin-top w3-animate-left w3-hide">
+            <h1 class="w3-xxxlarge">WORKS</h1>
+            <hr class="w3-border-grey" style="margin:auto; width:45%">
+        </div>
+        <br>
+
+        <div class="w3-row-padding">
+            <div class="w3-third w3-hide w3-animate-right" id="ninjaM" style="cursor: pointer;" onclick="document.getElementById('modal01').style.display='block'">
+                <div class="w3-display-container w3-card-4" style="min-height: 230px">
+                    <img src="NM1.PNG" style="width: 100%; height: 100%;">
+                    <div class="overlay w3-hide-small">
+                        <div class="w3-display-topleft w3-padding w3-margin">
+                            <a href = "https://github.com/R-Fan9/Ninja-Mission"><i class="fab fa-github" style="font-size: xx-large;"></i></a>
+                        </div>
+                        <div class="w3-display-topright w3-padding w3-margin">
+                            <i class="fab fa-python" style="font-size: x-large;"></i><br>
+                        </div>
+                        <div class="w3-display-topmiddle w3-padding w3-border w3-text-white w3-center w3-margin">
+                            <h5>NINJA MISSION</h5><hr>
+                            <h6>2D - Shooting &#8729; Pygame &#8729; OOP</h6>
+                        </div>
+                    </div>
+
+                    <div class="w3-hide-large">
+                        <div class="w3-padding w3-border w3-center w3-margin">
+                            <a href = "https://github.com/R-Fan9/Ninja-Mission"><i class="fab fa-github" style="font-size: xx-large;"></i></a>
+                            <h5>NINJA MISSION</h5><hr>
+                            <h6>2D - Retro Shooting &#8729; Pygame &#8729; OOP</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal01" class="w3-modal">
+                <div class="modal-content w3-animate-right imgShow">
+                    <img src="NM1.PNG" class="active">
+                    <img src="NM2.PNG">
+                    <img src="NM3.PNG">
+                    <img src="NM4.PNG">
+                    <img src="NM5.PNG">
+                    <a class="prev">&#10094</a>
+                    <a class="next">&#10095</a>
+                </div>
+                <br>
+
+                <div style="text-align: center;">
+                    <span class='dot active' onclick="curDot(1)"></span>
+                    <span class='dot' onclick="curDot(2)"></span>
+                    <span class='dot' onclick="curDot(3)"></span>
+                    <span class='dot' onclick="curDot(4)"></span>
+                    <span class='dot' onclick="curDot(5)"></span>
+                </div>
+            </div>
+
+            <div class="w3-third w3-hide w3-animate-right" id="liftJ" style="cursor: pointer" onclick="document.getElementById('modal02').style.display='block'"> 
+                <div class="w3-display-container w3-card-4" style="min-height: 230px">
+                    <img src="LJ1.PNG" style="width: 100%; height: 100%;">
+                    <div class="overlay w3-hide-small">
+                        <div class="w3-display-topleft w3-padding w3-margin">
+                            <a href = "https://github.com/R-Fan9/Project-Lift-Joint"><i class="fab fa-github" style="font-size: xx-large;"></i></a>
+                        </div>
+                        <div class="w3-display-topright w3-padding w3-margin">
+                            <i class="fab fa-python" style="font-size: x-large;"></i><br><br>
+                            <i class='fab fa-js' style="font-size: x-large;"></i><br><br>
+                            <i class='fab fa-css3' style="font-size: x-large;"></i><br><br>
+                            <i class='fab fa-html5' style="font-size: x-large;"></i>
+                        </div>
+                        <div class="w3-display-topmiddle w3-padding w3-border w3-text-white w3-center w3-margin">
+                            <h5>LIFT-JOINT</h5><hr>
+                            <h6>Client-Server &#8729; Full-Stack &#8729; Django </h6>
+                        </div>
+                    </div>
+
+                    <div class="w3-hide-large">
+                        <div class="w3-padding w3-border w3-center w3-margin">
+                            <a href = "https://github.com/R-Fan9/Project-Lift-Joint"><i class="fab fa-github" style="font-size: xx-large;"></i></a>
+                            <h5>LIFT-JOIN</h5><hr>
+                            <h6>Client-Server &#8729; Full-Stack &#8729; Django </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal02" class="w3-modal">
+                <div class="modal-content w3-animate-right imgShow">
+                    <img src="LJ1.PNG" class="active">
+                    <img src="LJ2.PNG">
+                    <img src="LJ3.PNG">
+                    <img src="LJ4.PNG">
+                    <img src="LJ5.PNG">
+                    <a class="prev">&#10094</a>
+                    <a class="next">&#10095</a>
+                </div>
+                <br>
+
+                <div style="text-align: center;">
+                    <span class='dot active' onclick="curDot(1)"></span>
+                    <span class='dot' onclick="curDot(2)"></span>
+                    <span class='dot' onclick="curDot(3)"></span>
+                    <span class='dot' onclick="curDot(4)"></span>
+                    <span class='dot' onclick="curDot(5)"></span>
+                </div>
+            </div>
+
+            <div class="w3-third w3-hide w3-animate-right" id="ProsH" style="cursor: pointer" onclick="document.getElementById('modal03').style.display='block'">
+                <div class="w3-display-container w3-card-4" style="min-height: 230px">
+                    <img src="PH1.PNG" style="width: 100%; height: 100%;">
+                    <div class="overlay w3-hide-small">
+                        <div class="w3-display-topright w3-padding w3-margin">
+                            <i class='fab fa-buysellads' style="font-size: x-large;"></i>
+                        </div>
+                        <div class="w3-display-topmiddle w3-padding w3-border w3-text-white w3-center w3-margin">
+                            <h5 w3-orange w3-opacity-min>PROSTHETIC HAND FRAME</h5><hr>
+                            <h6>Autodesk Inventor &#8729; Prusa MK3</h6>
+                        </div>
+                    </div>
+
+                    <div class="w3-hide-large">
+                        <div class="w3-padding w3-border w3-center w3-margin">
+                            <h5>PROSTHETIC HAND FRAME</h5><hr>
+                            <h6>Autodesk Inventor &#8729; Prusa MK3</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal03" class="w3-modal">
+                <div class="modal-content w3-animate-right imgShow">
+                    <img src="PH1.PNG" class="active">
+                    <img src="PH2.PNG">
+                    <img src="PH3.jpg">
+                    <img src="PH4.PNG">
+                    <img src="PH5.jpg">
+                    <a class="prev">&#10094</a>
+                    <a class="next">&#10095</a>
+                </div>
+                <br>
+
+                <div style="text-align: center;">
+                    <span class='dot active' onclick="curDot(1)"></span>
+                    <span class='dot' onclick="curDot(2)"></span>
+                    <span class='dot' onclick="curDot(3)"></span>
+                    <span class='dot' onclick="curDot(4)"></span>
+                    <span class='dot' onclick="curDot(5)"></span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="w3-row-padding w3-margin-top w3-hide-small w3-hide w3-animate-left" id="moreW">
+            <div class="w3-third">
+                <div class="w3-container w3-center" style="min-height: 200px">
+                    <h1 style="font-size:120px">&#8795;</h1>
+                </div>
+            </div>
+
+            <div class="w3-third">
+                <div class="w3-container w3-center w3-card" style="min-height: 200px">
+                    <img src="reactJs.png" style="width: 100%; height: 100%;">
+                </div>
+            </div>
+
+            <div class="w3-third">
+                <div class="w3-container w3-center" style="min-height: 200px">
+                    <h1 style="font-size:120px">&#8795;</h1>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="parallax w3-display-container">
+        <div class="w3-display-middle w3-center w3-hide-small w3-hide-medium">
+            <h1><span class="w3-padding w3-orange w3-opacity-min w3-orange" id="logo"><b>F</b></span> KEY - CHANGE THEME</h1>
+        </div>
+    </div>
+
+    <!-- More -->
+    <div class="w3-container w3-margin" id="More">
+
+        <div class="w3-row-padding">
+            <div class="w3-half w3-container w3-border-right w3-hide w3-animate-right" id="ac">
+                
+                <div class="w3-margin-top">
+                    <div class="w3-animate-left w3-hide" id="awards">
+                        <h1 class="w3-xxlarge w3-center w3-hide-small">AWARDS</h1>
+                         <h1 class="w3-large w3-center w3-hide-large w3-hide-medium">AWARDS</h1>
+                        <hr class="w3-border-grey" style="margin:auto; width:45%"><br>
+                    </div>
+
+                    <ul class="w3-ul w3-animate-opacity w3-hide">
+                        <li>
+                            <b>MCMASTER PRESIDENT'S AWARD
+                                <div style="float:right; padding-right: 5%;">
+                                    <img src="Mac.jpg" width="60" height="60">
+                                </div>
+                            </b>
+                            <h6><i class="fa fa-calendar"></i> SEPT 2019 | <i class='fas fa-crosshairs'></i> McMaster University</h6>
+                            <div class="w3-dropdown-click">
+                                <button onclick="dropDown(1)" class="w3-button w3-border">More Infomation</button>
+                                <div id="mpa" class="w3-dropdown-content">
+                                    <div class='w3-container'>
+                                        <p>Awarded to students who have achieved admission average that are 95% or above</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="w3-animate-left w3-hide" id="cert">
+                        <h1 class="w3-xxlarge w3-center w3-hide-small">CERTIFICATES</h1>
+                        <h1 class="w3-large w3-center w3-hide-large w3-hide-medium">CERTIFICATES</h1>
+                        <hr class="w3-border-grey" style="margin:auto; width:45%"><br>
+                    </div>
+
+                    <ul class="w3-ul w3-animate-opacity w3-hide">
+                        <li>
+                            <b>CANADIAN COMPUTING CONTEST - DISTINCTION
+                                <div style="float:right; padding-right: 5%;">
+                                    <img src="Loo.png" width="60" height="60">
+                                </div>
+                            </b>
+                            <h6><i class="fa fa-calendar"></i> Feb 2018 | <i class='fas fa-crosshairs'></i> University of Waterloo</h6>
+                            <div class="w3-dropdown-click">
+                                <button onclick="dropDown(2)" class="w3-button w3-border">More Infomation</button>
+                                <div id="ccc" class="w3-dropdown-content">
+                                    <div class='w3-container'>
+                                        <p>Awarded to participants who are ranked in the top 25% of CCC</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <b>MACHINE LEARNING
+                                <div style="float:right; padding-right: 5%;">
+                                    <img src="Stanford.png" width="60" height="60">
+                                </div>
+                                <div style="float:right; padding-right: 5%;">
+                                    <img src="Coursera.jfif" width="60" height="60">
+                                </div>
+                            </b>
+                            <h6><i class="fa fa-calendar"></i> May 2020 | <i class='fas fa-crosshairs'></i> Coursera & Stanford University</h6>
+                            <div class="w3-dropdown-click">
+                                <button onclick="dropDown(3)" class="w3-button w3-border">More Infomation</button>
+                                <div id="ml" class="w3-dropdown-content">
+                                    <div class='w3-container'>
+                                        <p>Taught by Prof. Andrew Ng, used MatLab to implement various ML algorithms</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+
+            </div>
+
+            <div class="w3-half w3-container w3-border-right w3-hide w3-animate-right" id="eca">
+                
+                <div class="w3-center w3-margin-top">
+                    <div class="w3-animate-right w3-hide" id="ecaT">
+                        <h1 class="w3-xxlarge w3-hide-small">EXTRACURRICULAR ACTIVAITIES</h1>
+                        <h1 class="w3-large w3-hide-large w3-hide-medium">EXTRACURRICULAR ACTIVAITIES</h1>
+                        <hr class="w3-border-grey" style="margin:auto; width:45%">
+                    </div>
+                </div>
+                <br>
+
+                <div class="w3-container w3-margin">
+
+                    <ul class="w3-ul w3-animate-opacity">
+                        <li>
+                            <b class="collasplable active" onclick="showInfo(1)">SENIORS IN CYBERSPACE</b>
+                            <h6><i class="fa fa-calendar"></i> May 2016 - Mar 2017 | <i class='fas fa-crosshairs'></i> Monarch Park Collegiate Institution, Toronto ON</h6>
+                            <p id="sic">Assisted, taught and introduced senior citizens with electronic devices and applications (e.g. the use of GUI & CLI, Microsoft Office and Photoshop)</p>
+                        </li>
+
+                        <li>
+                            <b class="collasplable" onclick="showInfo(2)">WEST PARK HEALTHCARE CENTRE</b>
+                            <h6><i class="fa fa-calendar"></i> Jun 2018 - Current | <i class='fas fa-crosshairs'></i> 82 Buttonwood Ave, York, ON</h6>
+                            <p id="wp" style="display:none">Helped patients to get their lives back by providing attentive care engaging activities and pleasant communication</p>
+                        </li>
+
+                        <li>
+                            <b class="collasplable" onclick="showInfo(3)">ECOO PROGRAMMING CONTEST</b>
+                            <h6><i class="fa fa-calendar"></i> May 2019 | <i class='fas fa-crosshairs'></i> York University, Toronto ON</h6>
+                            <p id="ecoo" style="display:none">Competed in a team of 4, developed different algorithms to solve 5 programming problems. Ranked in the top 30 teams</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="parallax w3-display-container">
+        <div class="w3-display-middle w3-center w3-hide-medium w3-hide-small">
+            <h1><span class="w3-padding w3-orange w3-opacity-min w3-orange" id="logo"><b>THANKS</b></span> FOR YOUR VISIT!</h1>
+        </div>
+        <div class="w3-display-middle w3-center w3-hide-large">
+            <h1><span class="w3-padding w3-orange w3-opacity-min w3-orange" id="logo"><b>END</b></span></h1>
+        </div>
+    </div>
+
+
+        <!-- Footer -->
+    <!--<footer class="w3-padding-64 w3-light-grey w3-small w3-center w3-border" id="footer">
+            
+    </footer>-->
+
+<script src="CVjs.js"></script>
+
+</body>
